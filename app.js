@@ -29,4 +29,10 @@ app.post('/api/names', (req, res) => {
   res.status(201).json(payload);
 })
 
+app.put('/api/names/:id', (req, res) => {
+    let id = parseInt(req.params.id);
+    const payload = req.body;
+    //db.memory
+})
+
 module.exports = app;
